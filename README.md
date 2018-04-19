@@ -6,7 +6,7 @@ Includes drivers for a laserscanner, localization and mapping (hector_slam), leg
 Computer OS: Ubuntu 16.04
 ROS distribution: Kinect
 
-##Reading data from S300 laserscanner
+## Reading data from S300 laserscanner
 
 Origin:
   Copyright (C) 2014
@@ -36,7 +36,7 @@ catkin_ws/src/sicks300/src/sicks300.cpp
 
 The topic '/laserscan' is now ready to use.
 
-##Localization and mapping
+## Localization and mapping
 
 Currently implemented via hector_slam.
 
