@@ -9,9 +9,7 @@ ROS distribution: Kinect
 
 ## Reading data from S300 laserscanner
 
-Install the package: https://github.com/bohlender/sicks300
-
-Use `git clone -b master https://github.com/bohlender/sicks300.git`
+Install the driver: `git clone -b master https://github.com/bohlender/sicks300.git`
 
 To check all dependencies: `rosdep install --from-paths <path to your catkin_ws/src> --ignore-src`
 
