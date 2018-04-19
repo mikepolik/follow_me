@@ -9,6 +9,12 @@ ROS distribution: Kinect
 
 ## Reading data from S300 laserscanner
 
+Install the package: https://github.com/bohlender/sicks300
+
+Use `git clone -b master https://github.com/bohlender/sicks300.git`
+
+To check all dependencies: `rosdep install --from-paths <path to your catkin_ws/src> --ignore-src`
+
 Origin:
 
   Copyright (C) 2014
@@ -42,7 +48,7 @@ The topic `/laserscan` is now ready to use.
 
 ## Localization and mapping
 
-Currently implemented via hector_slam.
+Currently implemented via hector_slam: `git clone -b catkin https://github.com/tu-darmstadt-ros-pkg/hector_slam.git`
 
 Origin:
 
@@ -51,6 +57,8 @@ Origin:
   Stefan Kohlbrecher
   
   TU Darmstadt
+
+**Replace the mapping_default.launch and ScanMatcher.h (see below) in your directory!**
 
 Some parameters in the `/hector_mapping/launch/mapping_default.launch` were modified (-->) for the S300 laserscanner:
 
