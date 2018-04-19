@@ -4,13 +4,17 @@ Follow me function for an autonomus trolley using two laserscanners and mecanum 
 Includes drivers for a laserscanner, localization and mapping (hector_slam), leg tracking and collision avoidance.
 
 Computer OS: Ubuntu 16.04
+
 ROS distribution: Kinect
 
 ## Reading data from S300 laserscanner
 
 Origin:
+
   Copyright (C) 2014
+  
   Software Engineering Group
+  
   RWTH Aachen University
 
 1. Make sure S300 is connected to a 24 VDC supply and to the PC via USB
@@ -41,19 +45,26 @@ The topic `/laserscan` is now ready to use.
 Currently implemented via hector_slam.
 
 Origin:
+
   Copyright (c) 2011
+  
   Stefan Kohlbrecher
+  
   TU Darmstadt
 
 Some parameters in the `/hector_mapping/launch/mapping_default.launch` were modified (-->) for the S300 laserscanner:
 
 map_multi_res_levels = 2 --> 4
+
 map_resolution = 0.050 --> 0.025
+
 map_update_distance_thresh = 0.4 --> 0.8
 
 
 In `/hector_mapping/include/hector_slam_lib/matcher/ScanMatcher.h`:
+
 in lines 209-215:
+
 searchDir = 0.2 --> 1.6
 
 To publish a transform from base_link (laser mounting surface) to the trolley_frame (tool trolley rotational centre) open `/hector_mapping/launch/mapping_default.launch` and modify the args x, y and yaw of link_to_trolley node:
