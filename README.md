@@ -77,6 +77,8 @@ To publish a transform from base_link (laser mounting surface) to the trolley_fr
 
 `<node pkg="tf" type="static_transform_publisher" name="link_to_trolley" args="x y 0 yaw 0 0 base_link trolley_frame 100"/>`
 
+Launch hector_mapping: `roslaunch hector_mapping mapping_default.launch`
+
 ## Leg detection and tracking
 
 **TODO**
